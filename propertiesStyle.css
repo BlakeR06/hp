@@ -1,0 +1,577 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(20, 20, 20);
+    margin-bottom: 100px;
+}
+
+#top{
+    position: absolute;
+    top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#properties{
+    background-color: rgb(256,124,36);
+}
+
+.topBarContainer{
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid rgb(66, 66, 66);
+    z-index: 999;
+    top: 0;
+}
+
+.topBar{
+    display: flex;
+    background-color: black;
+    padding: 20px;
+}
+
+.topBarLeft{
+    display: flex;
+    align-items: center;
+    background-color: rgb(256,124,36);
+    border-radius: 20px;
+    border: 2px solid rgb(66, 66, 66);
+    padding-bottom: 3px;
+}
+
+.topBarLogo{
+    background-image: url('houseLogo.png');
+    min-width: 260px;
+    height: 140px;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.topBarRight{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 10px;
+}
+
+.navBarItem{
+    color: white;
+    font-size: 22px;
+    margin-right: 30px;
+    background-color: rgb(66, 66, 66);
+    padding: 7px 17px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.topBarDropDownButton{
+    color: white;
+    font-size: 50px;
+    opacity: 0;
+    position: absolute;
+    margin-bottom: 200vh;
+    padding-right: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.topBarDropDownButtonText{
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.sideBarContainer{
+    position: fixed;
+    right: -300px;
+    transition: right 0.3s ease;
+}
+
+.sideBarItem{
+    background-color: rgb(66, 66, 66);
+    color: white;
+    padding: 10px 10px 10px 20px;
+    font-size: 22px;
+    width: 130px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid gray;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.show-sidebar{
+    right: 0;
+}
+
+@media (max-width: 970px){
+    .navBarItem{
+        display: none;
+    }
+    .topBarDropDownButton{
+        margin-bottom: 0px;
+        opacity: 10;
+        position: static;
+    }
+}
+
+.sideBarItem:hover{
+    background-color: rgb(256,124,36);
+}
+
+.navBarItem:hover{
+    background-color: rgb(256,124,36);
+}
+
+/*--------------------------------------------------*/
+
+#facebookIcon{
+    background-image: url('facebookIcon.png');
+}
+
+#inIcon{
+    background-image: url('inIcon.png');
+}
+
+#instagramIcon{
+    background-image: url('instagramIcon.png');
+}
+
+#xicon{
+    background-image: url('xicon.jpg');
+}
+
+#youtubeIcon{
+    background-image: url('youtubeIcon.png');
+}
+
+.bottomContainer{
+    margin-top: 200px;
+    margin-bottom: -95px;
+}
+
+.iconContainer{
+    background-color: rgb(256,124,36);
+    padding: 10px 50px;
+    display: flex;
+    border-bottom: 2px solid rgb(66, 66, 66);
+}
+
+.iconCropContainer{
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: border 0.3s ease;
+}
+
+.icon{
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+
+/*--------------------------------------------------*/
+
+.creditsContainer{
+    height: 20vh;
+    margin: 20px 50px 0px 50px;
+    cursor: default;
+    margin-bottom: 50px;
+}
+
+.creditTextContainer{
+    display: flex;
+    margin-top: 10px;
+}
+
+.creditTitle{
+    background-color: rgb(256,124,36);
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 3px;
+}
+
+.creditName{
+    padding: 3px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.bottomText{
+    color: white;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+.iconCropContainer:hover{
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+#phoneIcon{
+    background-image: url('phoneIcon.png');
+}
+#emailIcon{
+    background-image: url('emailIcon.png');
+}
+
+.contactContainer{
+    width: 100%;
+    height: 200px;
+    cursor: default;
+    margin-left: 50px;
+    margin-bottom: -60px;
+}
+
+.emailContainer{
+    display: flex; 
+}
+
+.phoneContainer{
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.contactText{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 16px;
+    color: white;
+}
+
+.smallerIcon{
+    width: 55px;
+    height: 55px;
+    border-radius: 100px;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+
+/*----------------------------------------------------        start copy from here       */ 
+
+/*----------------------------------------------------        IMAGES BELOW      */ 
+
+#Culbertson-1{
+    background-image: url('Culbertson-1.png');
+}
+#Culbertson-2{
+    background-image: url('Culbertson-2.png');
+}
+#Culbertson-3{
+    background-image: url('Culbertson-3.png');
+}
+#Culbertson-4{
+    background-image: url('Culbertson-4.png');
+}
+#Knob-1{
+    background-image: url('Knob-1.png');
+}
+#Knob-2{
+    background-image: url('Knob-2.png');
+}
+#Knob-3{
+    background-image: url('Knob-3.png');
+}
+#Knob-4{
+    background-image: url('Knob-4.png');
+}
+#CobCross-1{
+    background-image: url('CobCross-1.png');
+}
+#CobCross-2{
+    background-image: url('CobCross-2.png');
+}
+#CobCross-3{
+    background-image: url('CobCross-3.png');
+}
+#CobCross-4{
+    background-image: url('CobCross-4.png');
+}
+#Mason-1{
+    background-image: url('Mason-1.png');
+}
+#Mason-2{
+    background-image: url('Mason-2.png');
+}
+#Mason-3{
+    background-image: url('Mason-3.png');
+}
+#Mason-4{
+    background-image: url('Mason-4.png');
+}
+#EElm-1{
+    background-image: url('EElm-1.png');
+}
+#EElm-2{
+    background-image: url('EElm-2.png');
+}
+#EElm-3{
+    background-image: url('EElm-3.png');
+}
+#EElm-4{
+    background-image: url('EElm-4.png');
+}
+#Bridlewood-1{
+    background-image: url('Bridlewood-1.png');
+}
+#Bridlewood-2{
+    background-image: url('Bridlewood-2.png');
+}
+#Bridlewood-3{
+    background-image: url('Bridlewood-3.png');
+}
+#Bridlewood-4{
+    background-image: url('Bridlewood-14.png');
+}
+#Crystal-1{
+    background-image: url('Crystal-1.png');
+}
+#Crystal-2{
+    background-image: url('Crystal-2.png');
+}
+#Crystal-3{
+    background-image: url('Crystal-3.png');
+}
+#Crystal-4{
+    background-image: url('Crystal-4.png');
+}
+#Covington-1{
+    background-image: url('Covington-1.png');
+}
+#Covington-2{
+    background-image: url('Covington-2.png');
+}
+#Covington-3{
+    background-image: url('Covington-3.png');
+}
+#Covington-4{
+    background-image: url('Covington-4.png');
+}
+
+/*----------------------------------------------------     END OF IMAGES    */ 
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageTitle{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 50px;
+    cursor: default;
+}
+
+
+.mainContainer{
+    margin-top: 30vh;
+}
+
+.fullImageContainer{
+    margin: 0px auto;
+}
+
+.imageContainer{
+    display: flex;
+}
+
+.image{
+    aspect-ratio: 576/432;
+    width: 50%;
+    height: auto;
+    max-height: 576px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+/*----------------------------------------------------*/ 
+
+.underImageContainer{
+    display: flex;
+    margin: 30px 30px;
+    cursor: default;
+}
+
+.houseInfoContainer{
+    border: 1px solid rgb(256,124,36);
+    border-radius: 20px;
+    cursor: default;
+}
+
+.textContainer{
+    padding: 10px;
+    background-color: black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.font1{
+    background-color: rgb(256,124,36);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 10px 70px 9px 70px;
+    font-size: 50px;
+    
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.font2{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.font3{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+
+    font-family: 'Oswald', sans-serif;
+}
+
+.center2{
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+.font4{
+    font-size: 50px;
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.otherContactContainer{
+    display: flex;
+}
+
+.button1{
+    background-color: rgb(66, 66, 66);
+    color: white;
+    display: flex;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-top: 7px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button2{
+    background-color: rgb(66, 66, 66);
+    color: white;
+    display: flex;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;
+    height: 30px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-top: 7px;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button1:hover{
+    background-color: orange;
+}
+
+.button2:hover{
+    background-color: orange;
+}
+
+/*----------------------------------------------------     SIZING    */ 
+
+@media (max-width: 970px){
+    .imageContainer{
+        display: block;
+        padding: 30px 30px;
+    }
+    .image{
+        width: auto;
+        margin: 30px auto;
+    }
+    .etc{
+        margin-top: -60px;
+    }
+}
+
+@media (max-width: 1100px){
+    .underImageContainer{
+        display: block;
+    }
+    .houseInfoContainer{
+        width: 400px;
+        margin: 0px auto;
+    }
+    .center2{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .rightContainer{
+        margin-top: 70px;
+    }
+}

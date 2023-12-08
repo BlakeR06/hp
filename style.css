@@ -1,0 +1,579 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(20, 20, 20);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#home{
+    background-color: rgb(256,124,36);
+}
+
+.topBarContainer{
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid rgb(66, 66, 66);
+    z-index: 999;
+}
+
+.topBar{
+    display: flex;
+    background-color: black;
+    padding: 20px;
+}
+
+.topBarLeft{
+    display: flex;
+    align-items: center;
+    background-color: rgb(256,124,36);
+    border-radius: 20px;
+    border: 2px solid rgb(66, 66, 66);
+    padding-bottom: 3px;
+}
+
+.topBarLogo{
+    background-image: url('houseLogo.png');
+    min-width: 260px;
+    height: 140px;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.topBarRight{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 0px;
+}
+
+.navBarItem{
+    color: white;
+    font-size: 22px;
+    margin-right: 30px;
+    background-color: rgb(66, 66, 66);
+    padding: 7px 17px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.topBarDropDownButton{
+    color: white;
+    font-size: 50px;
+    opacity: 0;
+    position: absolute;
+    margin-bottom: 200vh;
+    padding-right: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.topBarDropDownButtonText{
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.sideBarContainer{
+    position: fixed;
+    right: -300px;
+    transition: right 0.3s ease;
+}
+
+.sideBarItem{
+    background-color: rgb(66, 66, 66);
+    color: white;
+    padding: 10px 10px 10px 20px;
+    font-size: 22px;
+    width: 130px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid gray;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.show-sidebar{
+    right: 0;
+}
+
+/*--------------------------------------------------*/
+
+.titleContainer{
+    width: 100%;
+}
+
+#featuredTitle{
+    font-size: 65px;
+    transition: padding-left 0.3s ease;
+    cursor: default;
+}
+
+.featuredHouseContainer{
+    background-color: rgb(20, 20, 20);
+    padding: 27vh 30px 50px 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.featuredHouseImage{
+    background-image: url('Covington-1.png');
+    height: 70vh;
+    width: 100%;
+    max-width: 1300px;
+    margin-top: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: max-height 0.3s ease;
+    border-radius: 30px;
+}
+
+.featuredHouseUiContainer{
+    padding: 30px;
+}
+
+.featuredHouseText{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Titan One', sans-serif;
+    color: white;
+    font-size: 30px;
+    transition: font-size 0.5s ease;
+    cursor: default;
+}
+
+.featuredHouseButton{
+    background-color: rgb(256,124,36);
+    padding: 7px 15px;
+    width: fit-content;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+.UiContainer{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#featuredHouseUiContainer2{
+    position: static;
+    padding: 0;
+    margin-right: auto;
+    transition: margin-top 0.3s ease;
+}
+
+/*--------------------------------------------------*/
+
+#Culbertson-4{
+    background-image: url('Culbertson-4.png');
+}
+
+#Knob-2{
+    background-image: url('Knob-2.png');
+}
+
+#CobCross-1{
+    background-image: url('CobCross-1.png');
+}
+
+#Mason-1{
+    background-image: url('Mason-1.png');
+}
+
+#EElm-1{
+    background-image: url('EElm-1.png');
+}
+
+#Bridlewood-1{
+    background-image: url('Bridlewood-1.png');
+}
+
+#Crystal-1{
+    background-image: url('Crystal-1.png');
+}
+
+#Covington-1{
+    background-image: url('Covington-1.png');
+}
+
+.propertiesContainer{
+    margin-top: 50px;
+    padding: 30px 50px 30px 50px;
+    border-top: 1px solid rgb(66, 66, 66);
+    border-bottom: 1px solid rgb(66, 66, 66);
+    padding-bottom: 50px;
+}
+
+.title{
+    color: white;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;
+    cursor: default;
+}
+
+.listingsContainer{
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.listing{
+    border-radius: 30px;
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 255, 0);
+    transition: border-color 0.3s ease;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.listingImgContainer{
+    overflow: hidden;
+}
+
+.listingImg{
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: none;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    transition: transform 0.3s ease;
+}
+
+.listingText{
+    background-color: rgb(256,124,36);
+    text-align: center;
+    padding: 10px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.listingPrice{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 30px;
+}
+
+.listingInfo{
+    font-size: 20px;
+    color: white;
+}
+
+/*--------------------------------------------------*/
+
+.webbContainer{
+    display: flex;
+    margin-top: 100px;
+    cursor: default;
+    border-bottom: 2px solid rgb(66, 66, 66);
+    padding-bottom: 100px;
+}
+
+.webTextContainer{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.webText{
+    max-width: 360px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.webPictureContainer{
+    width: 50%;
+    padding: 30px;
+    padding: 0px auto;
+}
+
+.webPicture{
+    background-image: url('webb.jpeg');
+    width: 50%;
+    max-height: 200px;
+    max-width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    margin: auto;
+    transition: max-height 0.3s ease, max-width 0.3s ease;
+}
+
+.webName{
+    font-size: clamp(20px, 2vw, 30px);
+    background-color: rgb(256,124,36);
+    width: fit-content;
+    margin: 20px auto auto auto;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+/*--------------------------------------------------*/
+
+#facebookIcon{
+    background-image: url('facebookIcon.png');
+}
+
+#inIcon{
+    background-image: url('inIcon.png');
+}
+
+#instagramIcon{
+    background-image: url('instagramIcon.png');
+}
+
+#xicon{
+    background-image: url('xicon.jpg');
+}
+
+#youtubeIcon{
+    background-image: url('youtubeIcon.png');
+}
+
+.bottomContainer{
+    
+}
+
+.iconContainer{
+    background-color: rgb(256,124,36);
+    padding: 10px 50px;
+    display: flex;
+    border-bottom: 2px solid rgb(66, 66, 66);
+}
+
+.iconCropContainer{
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: border 0.3s ease;
+}
+
+.icon{
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+
+/*--------------------------------------------------*/
+
+.creditsContainer{
+    height: 20vh;
+    margin: 20px 50px 0px 50px;
+    cursor: default;
+    margin-bottom: 50px;
+}
+
+.creditTextContainer{
+    display: flex;
+    margin-top: 10px;
+}
+
+.creditTitle{
+    background-color: rgb(256,124,36);
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 3px;
+}
+
+.creditName{
+    padding: 3px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.bottomText{
+    color: white;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+#phoneIcon{
+    background-image: url('phoneIcon.png');
+}
+#emailIcon{
+    background-image: url('emailIcon.png');
+}
+
+.contactContainer{
+    width: 100%;
+    height: 200px;
+    cursor: default;
+    margin-left: 50px;
+    margin-bottom: -60px;
+}
+
+.emailContainer{
+    display: flex; 
+}
+
+.phoneContainer{
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.contactText{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 16px;
+    color: white;
+}
+
+.smallerIcon{
+    width: 55px;
+    height: 55px;
+    border-radius: 100px;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+
+/*--------------------------------------------------*/
+
+@media (max-width: 970px){
+    .navBarItem{
+        display: none;
+    }
+    .topBarDropDownButton{
+        margin-bottom: 0px;
+        opacity: 10;
+        position: static;
+    }
+    .featuredHouseImage{
+        width: 100%;
+        height: auto;
+        max-height: 56.25vw;
+        aspect-ratio: 16 / 9;
+    }
+   
+   
+    .webbContainer{
+        display: block;
+    }
+    .webTextContainer{
+        display: block;
+        width: auto;
+    }
+    .webText{
+        max-width: 100%;
+    }
+    .webPictureContainer{
+        width: auto;
+    }
+}
+
+
+@media (min-width: 970px){
+    .webPicture{
+        max-width: 250px;
+        max-height: 250px;
+    }
+}
+@media (min-width: 1300px){
+    #featuredTitle{
+        padding-left: 30px;
+    }
+}
+
+@media (min-width: 1350px){
+    .UiContainer{
+        justify-content: center;
+    }
+    #featuredHouseUiContainer2{
+        margin-right: 0;
+        width: auto;
+        margin-right: 840px;
+    }
+    .webPicture{
+        max-width: 280px;
+        max-height: 280px;
+    }
+}
+
+/*-------------------------------------------------*/
+
+.sideBarItem:hover{
+    background-color: rgb(256,124,36);
+}
+
+.navBarItem:hover{
+    background-color: rgb(256,124,36);
+}
+
+.featuredHouseButton:hover{
+    background-color: rgb(256,124,36);
+    font-size: 30px;
+    background-color: orange;
+    color: rgb(66, 66, 66);
+}
+
+.listing:hover .listingImg {
+    transform: scale(1.2);
+}
+
+.listing:hover{
+    border: 2px solid white;
+}
+
+.iconCropContainer:hover{
+    border: 1px solid white;
+    box-sizing: border-box;
+}
